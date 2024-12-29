@@ -1,0 +1,62 @@
+body {
+    font-family: 'Reddit Mono', monospace;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* img {
+    width: 30%; /* Not using pixels here, because we dont want our code be be HARDCODED. We need it to be flexible when we move it around so 30% of the body our img will move accorddingly. Thus, we added percentage % here */
+  /*  margin: 1.4%;
+} */
+
+/* 30 + 30 + 30 = 90% space took by 3 images in one horizontal line
+10% left on the page, divided by 6
+= 1.6666%
+but this number is not giving our desired result so we practically try out the code with numbers around it and so we concluded with the number 
+= margin: 1.4%; */
+
+/* nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(188, 225, 227);
+    width: 30%;
+    margin-left: 1.4%;
+    padding: 1.2em 0;
+    font-weight: 800;
+    font-size: 1.4em;
+} */
+
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
