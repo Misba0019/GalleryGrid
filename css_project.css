@@ -1,62 +1,76 @@
 body {
-    font-family: 'Reddit Mono', monospace;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Reddit Mono', monospace; 
+    /* Set a custom font for the entire page */
+    background-color: #f4f4f4; 
+    /* Set a light background color for the entire page */
+    margin: 0; 
+    /* Remove default margin */
+    padding: 0; 
+    /* Remove default padding */
+    display: flex; 
+    /* Use flexbox layout */
+    flex-direction: column; 
+    /* Arrange items in a column */
     align-items: center;
+    /* Center align items horizontally */
 }
 
-/* img {
-    width: 30%; /* Not using pixels here, because we dont want our code be be HARDCODED. We need it to be flexible when we move it around so 30% of the body our img will move accorddingly. Thus, we added percentage % here */
-  /*  margin: 1.4%;
+/* Commented out this part because it's not in use
+img {
+    width: 30%; // Use percentage for responsive width
+margin: 1.4%; // Adjust margin for spacing between images
 } */
 
-/* 30 + 30 + 30 = 90% space took by 3 images in one horizontal line
-10% left on the page, divided by 6
-= 1.6666%
-but this number is not giving our desired result so we practically try out the code with numbers around it and so we concluded with the number 
-= margin: 1.4%; */
-
-/* nav {
-    text-transform: uppercase;
-    border-bottom: 2px solid rgb(188, 225, 227);
-    width: 30%;
-    margin-left: 1.4%;
-    padding: 1.2em 0;
-    font-weight: 800;
-    font-size: 1.4em;
-} */
-
-
+/* Explanation for image spacing
+30 + 30 + 30 = 90% space taken by 3 images in one horizontal line
+10% left on the page, divided by 6 = 1.6666%
+Adjusted margin: 1.4% for practical results
+*/
 
 nav {
-    background-color: #333;
+    background-color: #333; 
+    /* Dark background color for the navigation bar */
     color: #fff;
+    /* White text color for the navigation bar */
     width: 100%;
+    /* Full width navigation bar */
     padding: 15px;
+    /* Padding inside the navigation bar */
     text-align: center;
+    /* Center the text in the navigation bar */
     font-size: 1.5em;
+    /* Increase font size for the navigation bar text */
 }
 
 .photo-gallery {
     display: grid;
+    /* Use CSS Grid layout for the photo gallery */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Responsive columns with minimum width of 300px */
     gap: 10px;
+    /* Gap between grid items */
     padding: 20px;
+    /* Padding around the grid */
     width: 100%;
+    /* Full width gallery */
     max-width: 1200px;
+    /* Maximum width for the gallery */
 }
 
 .photo-gallery img {
     width: 100%;
+    /* Make images responsive to the grid item size */
     height: auto;
+    /* Maintain aspect ratio */
     border-radius: 10px;
+    /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow to images */
     transition: transform 0.2s;
+    /* Smooth transition for image hover effect */
 }
 
 .photo-gallery img:hover {
     transform: scale(1.05);
+    /* Slightly enlarge image on hover */
 }
