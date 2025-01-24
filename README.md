@@ -18,5 +18,18 @@ Images: Unsplash (unsplash.com)
 
 Fonts: Google Fonts (fonts.googleapis.com)
 
+## To run this project locally, follow these steps:
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Misba0019/CSS-Gallery-Project.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd CSS Gallery Project
+    ```
+
+3. **Open the `index.html` file in your preferred web browser.**
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
