@@ -26,7 +26,7 @@ Fonts: Google Fonts (fonts.googleapis.com)
 
 2. **Navigate to the project directory:**
     ```bash
-    cd CSS Gallery Project
+    cd CSS-Gallery-Project
     ```
 
 3. **Open the `index.html` file in your preferred web browser.**
