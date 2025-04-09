@@ -14,9 +14,9 @@ This project is a simple photo gallery webpage designed with HTML and CSS. It sh
 - Hover effect for images
 
 ## Credits
-Images: [Unsplash](unsplash.com)
+Images: [Unsplash](https://unsplash.com/)
 
-Fonts: [Google Fonts](fonts.googleapis.com)
+Fonts: [Google Fonts](https://fonts.google.com)
 
 ## To run this project locally, follow these steps:
 1. **Clone the repository:**
