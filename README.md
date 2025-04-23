@@ -32,4 +32,4 @@ Fonts: [Google Fonts](https://fonts.google.com)
 3. **Open the `css_project.html` file in your preferred web browser.**
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
