@@ -1,56 +1,36 @@
 body {
-    font-family: 'Reddit Mono', monospace; 
-    /* Set a custom font for the entire page */
-    background-color: #f4f4f4; 
-    /* Set a light background color for the entire page */
-    margin: 0; 
-    /* Remove default margin */
-    padding: 0; 
-    /* Remove default padding */
-    display: flex; 
-    /* Use flexbox layout */
-    flex-direction: column; 
-    /* Arrange items in a column */
+    background: linear-gradient(to bottom, #f4f4f4, #e9ecef);
+    /* Subtle gradient */
+    font-family: 'Reddit Mono', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* Center align items horizontally */
 }
 
-/* Commented out this part because it's not in use
-img {
-    width: 30%; // Use percentage for responsive width
-margin: 1.4%; // Adjust margin for spacing between images
-} */
-
-/* Explanation for image spacing
-30 + 30 + 30 = 90% space taken by 3 images in one horizontal line
-10% left on the page, divided by 6 = 1.6666%
-Adjusted margin: 1.4% for practical results
-*/
-
 nav {
-    background-color: #333; 
-    /* Dark background color for the navigation bar */
+    background-color: #333;
     color: #fff;
-    /* White text color for the navigation bar */
     width: 100%;
-    /* Full width navigation bar */
     padding: 15px;
-    /* Padding inside the navigation bar */
     text-align: center;
-    /* Center the text in the navigation bar */
     font-size: 1.5em;
-    /* Increase font size for the navigation bar text */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure nav stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 .photo-gallery {
     display: grid;
-    /* Use CSS Grid layout for the photo gallery */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* Responsive columns with minimum width of 300px */
     gap: 10px;
     /* Gap between grid items */
     padding: 20px;
-    /* Padding around the grid */
     width: 100%;
     /* Full width gallery */
     max-width: 1200px;
@@ -73,4 +53,31 @@ nav {
 .photo-gallery img:hover {
     transform: scale(1.05);
     /* Slightly enlarge image on hover */
+    filter: brightness(1.1);
+    /* Brighten image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.footer {
+    background: linear-gradient(to right, #333, #444);
+    /* Gradient background */
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    border-top: 1px solid #555;
+    font-family: 'Reddit Mono', monospace;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+    /* Remove default margin */
+    font-weight: 400;
+    /* Normal font weight for muted text */
+    color: #6c757d;
+    /* Ensure muted text color is applied */
 }
