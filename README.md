@@ -13,6 +13,8 @@ This project is a simple photo gallery webpage designed with HTML and CSS. It sh
 
 - Hover effect for images
 
+- Footer with gradient background and muted text styling
+
 ## Credits
 Images: [Unsplash](https://unsplash.com/)
 
