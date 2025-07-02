@@ -49,7 +49,7 @@ nav {
     /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Add shadow to images */
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
     /* Smooth transition for image hover effect */
 }
 
@@ -57,14 +57,11 @@ nav {
     transform: scale(1.05);
     /* Slightly enlarge image on hover */
     filter: brightness(1.1);
-    /* Brighten image on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .footer {
     background: linear-gradient(to right, #1e1e1e,#292929);
-    color: #fff;
     text-align: center;
     padding: 1rem 1rem;
     margin-top: 1rem;
@@ -74,7 +71,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Reddit Mono', monospace;
     width: 100%;
     box-sizing: border-box;
 }
