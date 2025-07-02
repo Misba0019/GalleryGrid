@@ -10,17 +10,20 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background: linear-gradient(to right, #1f1f1f, #2c2c2c);
     color: #fff;
     width: 100%;
-    padding: 15px;
+    padding: 1rem 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     position: sticky;
     top: 0;
     z-index: 1000;
     /* Ensure nav stays on top */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     /* Subtle shadow for depth */
 }
 
@@ -60,14 +63,17 @@ nav {
 }
 
 .footer {
-    background: linear-gradient(to right, #333, #444);
-    /* Gradient background */
-    color: #f4f4f4;
+    background: linear-gradient(to right, #1e1e1e,#292929);
+    color: #fff;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
     font-size: 0.875rem;
-    border-top: 1px solid #555;
+    border-top: 1px solid #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Reddit Mono', monospace;
     width: 100%;
     box-sizing: border-box;
@@ -75,9 +81,7 @@ nav {
 
 .footer p {
     margin: 0;
-    /* Remove default margin */
     font-weight: 400;
-    /* Normal font weight for muted text */
-    color: #6c757d;
-    /* Ensure muted text color is applied */
+    color: #999;
+    letter-spacing: 0.5px;
 }
