@@ -1,17 +1,6 @@
-# GalleryGrid
+# 📸 GalleryGrid
 
 A clean and responsive photo gallery webpage built with HTML and CSS. It features a visually appealing layout, hover effects, and high-quality images sourced from Unsplash — perfect for showcasing photography or styling UI.
-
----
-
-## Features
-
-- Responsive photo gallery layout
-- Clean and modern design
-- Use of Google Fonts for custom typography
-- High-quality images from Unsplash
-- Hover effect for images
-- Footer with gradient background and muted text styling
 
 ---
 
@@ -28,9 +17,29 @@ A clean and responsive photo gallery webpage built with HTML and CSS. It feature
 
 ---
 
+## Features
+
+- Responsive photo gallery layout
+- Clean and modern design
+- Google Fonts for custom typography
+- High-quality images from Unsplash
+- Hover effect for images
+- Footer with gradient background and muted text styling
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3 (CSS Grid and Flexbox)
+- [Google Fonts](https://fonts.google.com)
+- [Unsplash](https://unsplash.com) (Image sourcing)
+
+---
+
 ## Getting Started
 
-To run this project locally, follow these steps:
+You can view this project locally by following these steps:
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/Misba0019/GalleryGrid.git
@@ -41,7 +50,7 @@ To run this project locally, follow these steps:
 
 ## Credits
 
-- **Images**: Sourced from [Unsplash](https://unsplash.com) – used for demonstration only
+- **Images**: Sourced from [Unsplash](https://unsplash.com) – used for demonstration purposes only
 - **Fonts**: [Google Fonts](https://fonts.google.com)
 
 ---
